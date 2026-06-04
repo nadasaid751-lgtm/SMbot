@@ -66,9 +66,7 @@ async function sendVerificationEmail(toEmail, code) {
 }
 
 // ── SQLite ──────────────────────────────────────
-const DB_PATH = process.env.RENDER_DISK_PATH && fs.existsSync(process.env.RENDER_DISK_PATH)
-  ? path.join(process.env.RENDER_DISK_PATH, 'smbot.db')
-  : path.join(__dirname, 'smbot.db');
+const DB_PATH = path.join(__dirname, 'smbot.db');
 const db = new Database(DB_PATH);
 
 db.exec(`
