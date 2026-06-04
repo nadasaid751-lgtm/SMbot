@@ -1,0 +1,7 @@
+node_modules/
+.env
+smbot.db
+dist/
+build/
+npm-debug.log
+.DS_Store
